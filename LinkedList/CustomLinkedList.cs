@@ -4,7 +4,7 @@ namespace LinkedList
 	public class CustomLinkedList
 	{
         public Node head;
-        internal void Add(int data)
+        public void Append(int data)
         {
             Node newNode = new Node(data);
             if (this.head == null)
