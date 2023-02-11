@@ -22,6 +22,14 @@ namespace LinkedList
             }
             Console.WriteLine("{0} is Inserted into Linked List", newNode.data);
         }
+        public void AddFirst(int data)
+        {
+
+            Node node = new Node(data);
+            node.next = this.head;
+            this.head = node;
+            Console.WriteLine("{0} is inserted into LikedList", node.data);
+        }
         internal void Display()
         {
             Node temp = this.head;
