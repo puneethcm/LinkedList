@@ -6,9 +6,9 @@ internal class Program
     {
         Console.WriteLine("Welcome To Linked List");
         CustomLinkedList linkedlist = new CustomLinkedList();
-        linkedlist.Append(56);
-        linkedlist.Append(30);
-        linkedlist.Append(70);
+        linkedlist.Add(56);
+        linkedlist.Add(70);
+        linkedlist.insertAtMid(30);
         linkedlist.Display();
         Console.ReadLine();
     }
