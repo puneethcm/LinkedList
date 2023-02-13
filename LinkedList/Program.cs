@@ -7,8 +7,9 @@ internal class Program
         Console.WriteLine("Welcome To Linked List");
         CustomLinkedList linkedlist = new CustomLinkedList();
         linkedlist.Add(56);
+        linkedlist.Add(30);
         linkedlist.Add(70);
-        linkedlist.insertAtMid(30);
+        linkedlist.RemoveFirst();
         linkedlist.Display();
         Console.ReadLine();
     }
