@@ -22,29 +22,31 @@ namespace LinkedList
             }
             Console.WriteLine("{0} is Inserted into Linked List", newNode.data);
         }
-        public void RemoveLast()
+        public void Search(int data)
         {
+            bool isFound = false;
             Node temp = head;
             if (temp == null)
-                Console.WriteLine("its empty please add nodes");
-            if (temp.next == null)
-            {
-                int data = temp.data;
-                temp = null;
-                head = temp;
-                Console.WriteLine("{0} Node is deleted", data);
-            }
+                Console.WriteLine("Linked List is Empty");
             else
             {
-                while (temp.next.next != null)
+                while (temp != null)
                 {
-                    temp = temp.next;
-                }
+                    if (temp.data == data)
+                    {
+                        Console.WriteLine("{0} node is presernt", temp.data);
+                        isFound = true;
+                        break;
 
+                    }
+                    temp = temp.next;
+
+                }
+                if (!isFound)
+                    Console.WriteLine("{0} node is not present", data);
             }
-            int lastDeleteNode = temp.next.data;
-            temp.next = null;
-            Console.WriteLine("{0} node is deleted ", lastDeleteNode);
+
+
         }
 
         internal void Display()

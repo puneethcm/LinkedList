@@ -9,7 +9,7 @@ internal class Program
         linkedlist.Add(56);
         linkedlist.Add(30);
         linkedlist.Add(70);
-        linkedlist.RemoveLast();
+        linkedlist.Search(56);
         linkedlist.Display();
         Console.ReadLine();
     }
